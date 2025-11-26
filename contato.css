@@ -7,7 +7,17 @@ html, body {
     width: 100%;
     overflow-x: hidden;
 }
-
+.navbar-rola-esconde {
+    transition: transform 0.35s ease;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030;
+  }
+  .escondido {
+    transform: translateY(-110%);
+  }
 
 body{
     background-image: url(fotos/boanoitecinderela.webp);

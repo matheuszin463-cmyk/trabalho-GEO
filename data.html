@@ -19,14 +19,13 @@
      <!-- Navbar -->
   <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="g.html">DataCarbon</a>
+      <a class="navbar-brand" href="index.html">DataCarbon</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="g.html">Início</a></li>
-          <li class="nav-item"><a class="nav-link" href="data.html">Data Center</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
           <li class="nav-item"><a class="nav-link" href="quiz.html">Quiz</a></li>
           <li class="nav-item"><a class="nav-link" href="opinioes.html">Opiniões</a></li>
           <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
@@ -35,9 +34,31 @@
     </div>
   </nav>
 
+     <script>
+        let ultimaPos = window.scrollY;
+        const navbar = document.querySelector('.navbar, header, #menu, .header');
+
+        if (navbar) {
+            navbar.classList.add('navbar-rola-esconde');
+
+            window.addEventListener('scroll', () => {
+                let atual = window.scrollY;
+
+                if (atual < 500) {
+                    navbar.classList.remove('escondido');
+                } else if (atual > ultimaPos) {
+                    navbar.classList.add('escondido');
+                } else {
+                    navbar.classList.remove('escondido');
+                }
+                ultimaPos = atual;
+            });
+        }
+    </script>
+
     <!-- Hero -->
   <section class="hero">
-    <div class="container">
+    <div class="container overflow-auto">
       <div class="titulo">
     <h1>O que é um Data Center?</h1>
       </div>
@@ -48,28 +69,36 @@
    </div>
   </section>
     
-    <section class="hero">
+  <section class="section">
     <div class="container">
-      <div class="titulo">
-    <h1>Para que servem os Data Centers?</h1>
+      <div class="row align-items-center">
+        <div class="col-lg-5 mb-4 mb-lg-0">
+          <img src="fotos/Foto_data_center1.jpg" class="section-img" alt="Data Center">
+        </div>
+
+        <div class="col-lg-7">
+          <div class="section-box">
+            <div class="titulo">
+              <h1>Para que servem os Data Centers?</h1>
+            </div>
+
+            <p class="fs-5">
+              Os data centers têm várias funções fundamentais:<br><br>
+              Armazenar grandes volumes de dados (arquivos, bancos de dados, backups).<br><br>
+              Processar e executar aplicações — por exemplo, websites, serviços na nuvem, aplicações empresariais, big data, IA, entre outros.<br><br>
+              Garantir a disponibilidade contínua de serviços: sem data centers, muitos serviços digitais ficariam indisponíveis ou instáveis.<br><br>
+              Sustentar a economia digital, o crescimento da computação em nuvem, o tráfego de dados global e a transformação digital das empresas.
+            </p>
+          </div>
+        </div>
+
       </div>
-     <p class="text-center fs-5 mx-auto" style="max-width: 900px;">
-
-Os data centers têm várias funções fundamentais:
-
-Armazenar grandes volumes de dados (arquivos, bancos de dados, backups). 
-
-Processar e executar aplicações — por exemplo, websites, serviços na nuvem, aplicações empresariais, big data, IA, entre outros. 
-
-Garantir a disponibilidade contínua de serviços: sem data centers, muitos serviços digitais ficariam indisponíveis ou instáveis. 
-
-Sustentar a economia digital, o crescimento da computação em nuvem, o tráfego de dados global e a transformação digital das empresas.  
-     </p>
-   </div>
+    </div>
   </section>
+
     
     <section class="hero">
-    <div class="container">
+    <div class="container overflow-auto">
       <div class="titulo">
     <h1>Componentes e infraestrutura de um Data Center</h1>
       </div>
@@ -95,7 +124,7 @@ Monitoramento e manutenção: equipes de TI para garantir operação contínua, 
   </section>
     
     <section class="hero">
-    <div class="container">
+    <div class="container overflow-auto">
       <div class="titulo">
     <h1>Classificação: os "tiers" de data center</h1>
       </div>
@@ -118,7 +147,7 @@ A maioria dos data centers comerciais hoje opera em Tier III, por oferecer um bo
   </section>
     
     <section class="hero">
-    <div class="container">
+    <div class="container overflow-auto">
       <div class="titulo">
     <h1>Tipos de data centers</h1>
       </div>
@@ -141,7 +170,7 @@ Além disso, há variações de modelo de uso: data centers privados, compartil�
   </section>
     
     <section class="hero">
-    <div class="container">
+    <div class="container overflow-auto">
       <div class="titulo">
     <h1>Importância e desafios atuais</h1>
           <h2>Importância</h2>
@@ -160,7 +189,7 @@ Suporte a novas tecnologias — big data, IA, machine learning, aplicações em 
   </section>
     
     <section class="hero">
-    <div class="container">
+    <div class="container overflow-auto">
       <div class="titulo">
           <h2>Desafios</h2>
       </div>
@@ -181,30 +210,38 @@ Sustentabilidade e impacto ambiental: a alta demanda energética e de refrigera�
    </div>
   </section>
     
-    <section class="hero">
+  <section class="section">
     <div class="container">
-      <div class="titulo">
-    <h1>A evolução e o futuro dos data centers</h1>
+      <div class="row align-items-center flex-lg-row-reverse">
+        <div class="col-lg-5 mb-4 mb-lg-0">
+          <img src="fotos/Foto_data_center2.jpg" class="section-img" alt="Data Center Futuro">
+        </div>
+
+        <div class="col-lg-7">
+          <div class="section-box">
+            <div class="titulo">
+              <h1>A evolução e o futuro dos data centers</h1>
+            </div>
+
+            <p class="fs-5">
+              Com a expansão da internet, da computação em nuvem e do uso pesado de dados, os data centers estão evoluindo constantemente. Alguns dos movimentos e tendências:<br><br>
+              A adoção de virtualização e consolidação de servidores — reduzindo o número de máquinas físicas e melhorando a eficiência energética.<br><br>
+              Uso de resfriamento mais eficiente: técnicas modernas como “close-coupled cooling”, resfriamento líquido, corredores quentes/frios, para lidar com o calor gerado por alta densidade de equipamentos.<br><br>
+              Infraestrutura mais automatizada e inteligente, com uso de IA / machine learning para otimizar energia, resfriamento e distribuição de carga.<br><br>
+              Crescimento da computação em nuvem e serviços de colocation, para permitir que empresas se concentrem em seu core business sem ter que gerenciar data center próprio.<br><br>
+              Busca por sustentabilidade energética — dado o grande consumo dos data centers, há tendência de adoção de fontes mais limpas e mais eficientes de energia.
+            </p>
+
+          </div>
+        </div>
+
       </div>
-     <p class="text-center fs-5 mx-auto" style="max-width: 900px;">
-
-Com a expansão da internet, da computação em nuvem e do uso pesado de dados, os data centers estão evoluindo constantemente. Alguns dos movimentos e tendências:
-
-A adoção de virtualização e consolidação de servidores — reduzindo o número de máquinas físicas e melhorando a eficiência energética. 
-
-Uso de resfriamento mais eficiente: técnicas modernas como “close-coupled cooling”, resfriamento líquido, corredores quentes/frios, para lidar com o calor gerado por alta densidade de equipamentos. 
-
-Infraestrutura mais automatizada e inteligente, com uso de IA / machine learning para otimizar energia, resfriamento e distribuição de carga. 
-
-Crescimento da computação em nuvem e serviços de colocation, para permitir que empresas se concentrem em seu core business sem ter que gerenciar data center próprio. 
-
-Busca por sustentabilidade energética — dado o grande consumo dos data centers, há tendência de adoção de fontes mais limpas e mais eficientes de energia (e.g. energia renovável, otimização de uso).  
-     </p>
-   </div>
+    </div>
   </section>
+
     
     <section class="hero">
-    <div class="container">
+    <div class="container overflow-auto">
       <div class="titulo">
     <h1>Conclusão</h1>
       </div>
@@ -219,18 +256,6 @@ Para empresas e organizações, os data centers são a base sobre a qual se cons
    </div>
   </section>
 
-  <!-- Importância -->
-  <section id="importancia">
-    <div class="container">
-      <div class="titulo">
-        <h2>Por que os Data Centers são importantes?</h2>
-      </div>
-      <p class="text-center fs-5 mx-auto" style="max-width: 900px;">
-        Os data centers são o coração digital da economia moderna. Eles garantem o funcionamento de bancos, governos, empresas e plataformas online. 
-        No entanto, seu consumo energético é um desafio crescente — representando cerca de <strong>2% de toda a energia mundial</strong> — com tendência de aumento devido à IA e computação em nuvem.
-      </p>
-    </div>
-  </section>
     
 </body>
 </html>

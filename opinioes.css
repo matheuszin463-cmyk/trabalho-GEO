@@ -4,10 +4,24 @@
   padding: 0;
   box-sizing: border-box;
 }
-html, body {
-    width: 100%;
-    overflow-x: hidden;
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
 }
+
+.navbar-rola-esconde {
+    transition: transform 1s ease;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030;
+  }
+  .escondido {
+    transform: translateY(-110%);
+  }
 
 body {
   font-family: 'Inter', sans-serif;
@@ -20,7 +34,9 @@ body {
   overflow-x: hidden;
 }
 
-h1, h2, .btn {
+h1,
+h2,
+.btn {
   font-family: 'Space Grotesk', sans-serif;
 }
 
@@ -81,50 +97,56 @@ h1, h2, .btn {
   margin-top: 1rem;
   color: #cfcfcf;
 }
-#section-inicio{
-  padding-bottom:80px ;
-  padding-top:10px ;
+
+#section-inicio {
+  padding-bottom: 80px;
+  padding-top: 10px;
 }
 
-#inicio{
+#inicio {
   display: flex;
   justify-content: center;
   gap: 40px;
 }
-#favor{
-   background: linear-gradient(to right, #1cad02, #134600fc);
-   -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
+
+#favor {
+  background: linear-gradient(to right, #1cad02, #134600fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-iframe{
+
+iframe {
   border: 1px solid #002794;
   border-radius: 40px;
 }
-iframe:hover{
+
+iframe:hover {
   transform: translateY(-5px);
   box-shadow: 0 5px 10px rgb(0, 0, 0);
 }
+
 #contra {
 
-    background: linear-gradient(to right, #4c0600, #da1200fc);
-   -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
-    
+  background: linear-gradient(to right, #4c0600, #da1200fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
 }
 
-#depoimentos1{
+#depoimentos1 {
   border: 1px solid #002794;
   display: flex;
- flex-direction:column;
- gap: 25px;
+  flex-direction: column;
+  gap: 25px;
   padding: 30px;
   border-radius: 15px;
   max-width: 1200px;
   height: 920px;
-background-color:  #8f8d8b;
+  background-color: #8f8d8b;
 }
-#depoimento-card1{
-   display: flex;
+
+#depoimento-card1 {
+  display: flex;
   justify-content: center;
   height: auto;
   width: 1140px;
@@ -138,8 +160,9 @@ background-color:  #8f8d8b;
   transition: transform 0.3s, box-shadow 0.3s;
 
 }
-#depoimento-card2{
-   display: flex;
+
+#depoimento-card2 {
+  display: flex;
   justify-content: center;
   height: auto;
   width: 1140px;
@@ -153,32 +176,35 @@ background-color:  #8f8d8b;
   transition: transform 0.3s, box-shadow 0.3s;
 
 }
-.depoimentos2{
- 
-}
+
+.depoimentos2 {}
 
 #depoimento-card1:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 20px rgb(0, 0, 0);
 }
+
 #depoimento-card2:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 20px rgb(0, 0, 0);
 }
-.texto-foto{
+
+.texto-foto {
   text-align: center;
   padding: 10px;
- 
+
   border-radius: 15px;
   background-color: #0c0c0c;
-   max-width: 220px;
+  max-width: 220px;
   max-height: 300px;
 }
-#texto-miguel{
+
+#texto-miguel {
   margin: 20px;
 }
-#img1{
-  
+
+#img1 {
+
   margin-bottom: 30px;
   border-radius: 100%;
   max-width: 200px;

@@ -4,10 +4,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-html, body {
-    width: 100%;
-    overflow-x: hidden;
-}
 
 body {
   font-family: 'Inter', sans-serif;
@@ -19,6 +15,18 @@ body {
   line-height: 1.6;
   overflow-x: hidden;
 }
+
+.navbar-rola-esconde {
+    transition: transform 2s ease;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030;
+  }
+  .escondido {
+    transform: translateY(-110%);
+  }
 
 h1, h2, .btn {
   font-family: 'Space Grotesk', sans-serif;
@@ -67,6 +75,11 @@ h1, h2, .btn {
   padding: 0 1rem;
 }
 
+img {
+  width: auto;
+  height: 450px;
+}
+
 .hero h1 {
   font-size: 4rem;
   font-weight: 700;
@@ -98,4 +111,39 @@ section {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 700;
+}
+
+.section {
+  padding: 5rem 0;
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(6px);
+}
+
+
+.section-box {
+  background: rgba(0, 0, 0, 0.45);
+  border-radius: 18px;
+  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+
+.section-img {
+  width: 100%;
+  border-radius: 14px;
+  object-fit: cover;
+  max-height: 350px;
+}
+
+.hero {
+  height: auto;
+  padding-top: 8rem;
+  padding-bottom: 5rem;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+@media (min-width: 992px) {
+  .section {
+    padding: 6rem 0;
+  }
 }
