@@ -3,21 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-html, body {
-    width: 100%;
-    overflow-x: hidden;
-}
-.navbar-rola-esconde {
-    transition: transform 0.35s ease;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1030;
-  }
-  .escondido {
-    transform: translateY(-110%);
-  }
+
 
 body{
     background-image: url(fotos/boanoitecinderela.webp);
@@ -27,6 +13,17 @@ body{
     line-height: 1.6;
     overflow-x: hidden;
 }
+.navbar-rola-esconde {
+    transition: transform 0.75s ease;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030;
+  }
+  .escondido {
+    transform: translateY(-110%);
+  }
 
 
 /*Navbar*/
@@ -110,7 +107,7 @@ body{
 
 .agaum {
     font-size: 3.2rem;
-    background: linear-gradient(135deg, #002794, #76a7cf);
+    background: linear-gradient(135deg, #8f8d8b, #f0f0f0);
     background-clip: text;
     color: transparent;
     font-weight: 700;
@@ -125,13 +122,31 @@ body{
 .text {
     color: #bebebe;
 }
-/* === Footer === */
-footer {
-  margin-top: 60px;
-  text-align: center;
-  padding: 2rem 0;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  color: #999;
-  font-size: 0.9rem;
-  background-color: #0c0c0c;
+
+.formula {
+    transition: 0.5s;
+}
+
+.formula:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 86, 245, 0.3);
+}
+
+.entre {
+    transition: 0.5s;
+}
+
+.entre:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 86, 245, 0.3);
+}
+
+.butao {
+    transition: 0.5s;
+}
+
+.butao:hover {
+    transform: translateY(-5px);
+    color: white;
+    background-color: #002faf;
 }

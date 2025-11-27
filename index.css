@@ -6,22 +6,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-html, body {
-    width: 100%;
-    overflow-x: hidden;
-}
 
-.navbar-rola-esconde {
-    transition: transform 2s ease;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1030;
-  }
-  .escondido {
-    transform: translateY(-110%);
-  }
 
 body{
     background-image: url(fotos/boanoitecinderela.webp);
@@ -31,6 +16,17 @@ body{
     line-height: 1.6;
     overflow-x: hidden;
 }
+.navbar-rola-esconde {
+    transition: transform 0.75s ease;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030;
+  }
+  .escondido {
+    transform: translateY(-110%);
+  }
 
 
 /*Navbar*/
@@ -139,7 +135,7 @@ body{
 
 .btn-primary-custom:hover {
     transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(9, 167, 240, 0.3);
+  box-shadow: 0 10px 20px rgba(0, 86, 245, 0.3);
   color: white;
 }
 
@@ -211,11 +207,41 @@ body{
     color: #e7e7e7;
 }
 
-.dadinhos small {
+.dadinhos a {
     color: #4b4b4b;
     font-weight: 500;
     font-size: 1.0rem;
+    text-decoration: none;
+    transition: all 0.3s;
+    display: inline-block;
 }
+
+.dadinhos a:hover {
+    transform: translateY(-5px);
+    text-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
+}
+
+.dadinhos a small {
+    color: #4b4b4b;
+    transition: all 0.3s;
+}
+
+.dadinhos a span {
+    color: #4b4b4b;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.dadinhos a:hover span {
+    color: #afafaf;
+    text-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
+}
+
+.dadinhos a:hover small {
+    color: #4b4b4b;
+    text-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
+}
+
 
 
 
@@ -249,7 +275,7 @@ body{
 
 .abc:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(2, 139, 202, 0.3);
+    box-shadow: 0 10px 20px rgba(0, 86, 245, 0.3);
 }
 
 .abd {
@@ -281,6 +307,19 @@ body{
 
 .vs {
     text-shadow: 0 2px 70px #ffffff;
+}
+
+#link {
+    text-decoration: none;
+}
+
+#linkn {
+    transition: 0.3s;
+}
+
+#linkn:hover {
+    transform: translateY(-5px);
+    text-shadow: 0 10px 20px rgba(65, 65, 65, 0.438);
 }
 
 

@@ -5,24 +5,6 @@
   box-sizing: border-box;
 }
 
-html,
-body {
-  width: 100%;
-  overflow-x: hidden;
-}
-
-.navbar-rola-esconde {
-    transition: transform 1s ease;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1030;
-  }
-  .escondido {
-    transform: translateY(-110%);
-  }
-
 body {
   font-family: 'Inter', sans-serif;
   background-image: url('fotos/boanoitecinderela.webp');
@@ -33,6 +15,17 @@ body {
   line-height: 1.6;
   overflow-x: hidden;
 }
+.navbar-rola-esconde {
+    transition: transform 0.35s ease;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030;
+  }
+  .escondido {
+    transform: translateY(-110%);
+  }
 
 h1,
 h2,
@@ -109,21 +102,7 @@ h2,
   gap: 40px;
 }
 
-#favor {
-  background: linear-gradient(to right, #1cad02, #134600fc);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
 
-iframe {
-  border: 1px solid #002794;
-  border-radius: 40px;
-}
-
-iframe:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 5px 10px rgb(0, 0, 0);
-}
 
 #contra {
 
@@ -132,75 +111,60 @@ iframe:hover {
   -webkit-text-fill-color: transparent;
 
 }
+#favor{
 
-#depoimentos1 {
-  border: 1px solid #002794;
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-  padding: 30px;
-  border-radius: 15px;
-  max-width: 1200px;
-  height: 920px;
-  background-color: #8f8d8b;
-}
-
-#depoimento-card1 {
-  display: flex;
-  justify-content: center;
-  height: auto;
-  width: 1140px;
-  background-color: #1e1e1e;
-  border: 1px solid #940000;
-  border-radius: 15px;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-top: 2rem;
-  padding-bottom: 1rem;
-  transition: transform 0.3s, box-shadow 0.3s;
+    background: linear-gradient(to right, #28db00, #0c3f00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 
 }
 
-#depoimento-card2 {
-  display: flex;
-  justify-content: center;
-  height: auto;
-  width: 1140px;
-  background-color: #1e1e1e;
-  border: 1px solid #009414;
-  border-radius: 15px;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-top: 2rem;
-  padding-bottom: 1rem;
-  transition: transform 0.3s, box-shadow 0.3s;
 
+
+.videozinm {
+    transition: 0.3s;
+    border-radius: 16px;
 }
 
-.depoimentos2 {}
-
-#depoimento-card1:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgb(0, 0, 0);
+.videozinm:hover {
+    transform: scale(0.92);
+    
 }
 
-#depoimento-card2:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgb(0, 0, 0);
+.migu {
+    transition: 0.3s;
+    border-radius: 16px;
 }
 
-.texto-foto {
-  text-align: center;
-  padding: 10px;
-
-  border-radius: 15px;
-  background-color: #0c0c0c;
-  max-width: 220px;
-  max-height: 300px;
+.migu:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(211, 0, 0, 0.233);
 }
 
-#texto-miguel {
-  margin: 20px;
+
+.lula{
+    transition: 0.3s;
+    border-radius: 16px;
+}
+
+.lula:hover {
+    transform: scale(0.92);
+    
+}
+
+
+.lulinha {
+    transition: 0.3s;
+    border-radius: 16px;
+}
+
+.lulinha:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 209, 28, 0.233);
+}
+
+.opn {
+  margin-top: 150px;
 }
 
 #img1 {
@@ -272,6 +236,14 @@ form {
   transform: translateY(-3px);
   box-shadow: 0 10px 20px rgba(9, 167, 240, 0.3);
 }
+
+
+
+
+
+
+
+
 
 /* === Footer === */
 footer {

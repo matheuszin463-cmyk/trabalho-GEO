@@ -4,21 +4,6 @@
     box-sizing: border-box;
 }
 
-html, body {
-    width: 100%;
-    overflow-x: hidden;
-}
-.navbar-rola-esconde {
-    transition: transform 1s ease;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1030;
-  }
-  .escondido {
-    transform: translateY(-110%);
-  }
 
 body{
     background-image: url(fotos/boanoitecinderela.webp);
@@ -28,6 +13,17 @@ body{
     line-height: 1.6;
     overflow-x: hidden;
 }
+.navbar-rola-esconde {
+    transition: transform 0.75s ease;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030;
+  }
+  .escondido {
+    transform: translateY(-110%);
+  }
 
 
 /*Navbar*/
@@ -86,13 +82,21 @@ body{
 
 
 
-
+/*agaum*/
+.aga {
+    font-size: 3.2rem;
+    background: linear-gradient(135deg, #8f8d8b, #f0f0f0);
+    background-clip: text;
+    color: transparent;
+    font-weight: 700;
+    margin-top: 170px;
+}
 
 /*quiz*/
 
 .perguntas {
-    margin-top: 150px;
-    margin-bottom: 150px;
+    margin-top: 100px;
+    margin-bottom: 130px;
     padding: 30px;
     background: rgba(27, 27, 27, 0.95);
     border-radius: 25px;
